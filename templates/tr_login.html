@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<html>
+	<head>
+	<title>{% block title %} (lib-ms) Library Management System | Beta{% endblock %}</title>
+	<script type="text/javascript" src="{% static "js/jquery-2.1.1.min.js" %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+	<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/ajax.js" %}"></script>
+</head>
+<body>
+{% include 'navbar.html' %}
+<form method="POST" action="">{%csrf_token%}
+	Username:<input type="text" name="uname"><br>
+	Password:<input type="password" name="pwd"><br>
+	<input type="submit" value="submit">
+</form>
+</body>
+</html>

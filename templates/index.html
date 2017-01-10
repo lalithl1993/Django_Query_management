@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>{% block title %} Query Management System | Beta{% endblock %}</title>
+	<script type="text/javascript" src="{% static "js/jquery-2.1.1.min.js" %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+	<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/ajax.js" %}"></script>
+</head>
+<body>
+{% include 'navbar.html' %}
+<!-- <a href="/queryapp/tr_login/">Teacher</a>
+<a href="/queryapp/st_login">Student</a> -->
+<div class="container">	
+	<div class="jumbotron">
+  <h1>Query Management System</h1>
+  </div>
+</div>
+</body>
+</html>
